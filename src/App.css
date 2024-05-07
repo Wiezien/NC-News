@@ -5,6 +5,40 @@
   text-align: center;
 }
 
-.lists {
+li {
   list-style-type: none;
+}
+
+.article {
+  border: dotted 2px darkgray;
+  margin-bottom: 3rem;
+}
+
+#article-btn {
+  background-color: lightblue;
+  border: solid 2px black;
+}
+
+#single-article {
+  border: solid 3px green;
+  text-align: center;
+  margin-left: 0;
+}
+
+#article-title {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+#article-list {
+  font-size: 2rem;
+}
+
+#article-body {
+  border: dashed 2px lightgray;
+}
+
+#article-image {
+  max-width: 100%;
+  height: auto;
 }
