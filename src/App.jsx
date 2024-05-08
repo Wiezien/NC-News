@@ -16,7 +16,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<ArticlesList />} />
-        <Route path ="/articles/:article_id" element={<DetailedArticle />} />
+        <Route path="/articles/:article_id" element={<DetailedArticle />} />
       </Routes>
     </div>
   );
