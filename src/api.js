@@ -13,3 +13,9 @@ export function getArticleById(article_id) {
     return data;
   });
 }
+
+export function getCommentsByArticleId(article_id) {
+    return newsAPI.get(`api/articles/${article_id}/comments`).then((data) => {
+        return data;
+    });
+}

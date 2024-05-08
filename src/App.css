@@ -42,3 +42,8 @@ li {
   max-width: 100%;
   height: auto;
 }
+
+#comment-item {
+  border-bottom: solid 1px orange;
+  padding-bottom: 1rem;
+}
