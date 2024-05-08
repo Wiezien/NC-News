@@ -5,7 +5,7 @@ import DetailedArticle from "./DetailedArticle";
 
 function ArticleCard({ article }) {
   return (
-    <section className="article">
+    <section key={article.article_id} className="article">
       <h2>{article.title}</h2>
       <h3>By {article.author}</h3>
       <p>Topic: {article.topic}</p>

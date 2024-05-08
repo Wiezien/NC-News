@@ -30,7 +30,7 @@ function ArticlesList() {
   return (
     <div>
       {allArticles.map((article) => (
-        <ArticleCard key={article.id} article={article} />
+        <ArticleCard key={article.article_id} article={article} />
       ))}
     </div>
   );

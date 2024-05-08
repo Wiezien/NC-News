@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { getArticleById, getCommentsByArticleId } from "../api";
 import ArticleCard from "./ArticleCard";
 import CommentCard from "./CommentCard";
+import ArticleVotes from "./ArticleVotes";
+import { patchVotesByArticleId } from "../api";
 
 function DetailedArticle() {
   const { article_id } = useParams();
@@ -24,6 +26,10 @@ function DetailedArticle() {
     return <p>Loading...</p>;
   }
 
+  if (!comments) {
+    return <p>Loading...</p>;
+  }
+
   return (
     <div id="single-article">
       <h2 id="article-title">{article.title}</h2>
@@ -34,11 +40,13 @@ function DetailedArticle() {
         <li>* Timestamp: {article.created_at}</li>
         <li>* Votes: {article.votes}</li>
       </ul>
+      <ArticleVotes article={article} currentVotes={article.votes} />
       <img
         src={article.article_img_url}
         alt={article.title}
         id="article-image"
       />
+
       <CommentCard key={comments.id} comments={comments} />
     </div>
   );

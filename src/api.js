@@ -19,3 +19,9 @@ export function getCommentsByArticleId(article_id) {
         return data;
     });
 }
+
+export function patchVotesByArticleId(article_id, newVote) {
+  return newsAPI.patch(`api/articles/${article_id}`, {inc_votes: newVote}).then((data) => {
+    return data;
+  });
+}
