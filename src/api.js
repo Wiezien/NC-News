@@ -38,3 +38,9 @@ export function postCommentByArticleId(addComment) {
       return response.data;
     });
 }
+
+export function deleteCommentById(comment_id) {
+  return newsAPI.delete(`api/comments/${comment_id}`).then(({ data }) => {
+    return data;
+  });
+}

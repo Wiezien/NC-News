@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header>
+    <header id="heading">
       <h1>NC-News</h1>
     </header>
   );
