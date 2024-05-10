@@ -58,7 +58,7 @@ function AddCommentForm() {
         <button id="submit-button" type="submit" disabled={!isCommentValid}>
           Add Comment
         </button>
-        {message && <p id="submit-alert">{message}</p>}
+        {message && <p className="message-alert">{message}</p>}
       </form>
     </div>
   );

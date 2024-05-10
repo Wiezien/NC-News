@@ -24,10 +24,6 @@ function DetailedArticle() {
     return <p>Loading...</p>;
   }
 
-  if (!comments) {
-    return <p>Loading...</p>;
-  }
-
   return (
     <div id="single-article">
       <h2 id="article-title">{article.title}</h2>
@@ -44,7 +40,11 @@ function DetailedArticle() {
         alt={article.title}
         id="article-image"
       />
-      <CommentCard key={comments.id} comments={comments} />
+      <CommentCard
+        key={comments.id}
+        comments={comments}
+        setComments={setComments}
+      />
     </div>
   );
 }

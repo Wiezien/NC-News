@@ -5,12 +5,27 @@
   text-align: center;
 }
 
+#heading {
+  font-size: 3rem;
+  text-shadow: 10px 10px lightgray;
+}
+
+#home {
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+#home:hover {
+  color: red;
+}
+
 li {
   list-style-type: none;
 }
 
 .article {
-  border: dotted 2px darkgray;
+  border: dashed 2px rgb(119, 8, 119);
+  padding-bottom: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -19,8 +34,11 @@ li {
   border: solid 2px black;
 }
 
+#article-btn:hover {
+  background-color: rgb(111, 196, 224);
+}
+
 #single-article {
-  border: solid 3px green;
   text-align: center;
   margin-left: 0;
 }
@@ -35,7 +53,7 @@ li {
 }
 
 #article-body {
-  border: dashed 2px lightgray;
+  border: dashed 2px rgb(119, 8, 119);
 }
 
 #article-image {
@@ -44,7 +62,7 @@ li {
 }
 
 #comment-item {
-  border-bottom: solid 1px orange;
+  border-bottom: dashed 2px rgb(119, 8, 119);
   padding-bottom: 1rem;
 }
 
@@ -53,9 +71,12 @@ li {
 }
 
 .vote-button {
-  border: solid 1px black;
   margin: 0 1rem 1rem 1rem;
   background-color: rgb(221, 209, 232);
+}
+
+.vote-button:hover {
+  background-color: rgb(201, 175, 224);
 }
 
 #submit-button {
@@ -64,11 +85,11 @@ li {
   background-color: rgb(221, 209, 232);
 }
 
-#comment-button {
-  display: inline-block;
+#submit-button:hover {
+  background-color: rgb(201, 175, 224);
 }
 
-#submit-alert {
+.message-alert {
   font-size: 2rem;
   font-weight: bold;
   color: green;
@@ -81,4 +102,16 @@ li {
 
 #newComment {
   padding: 1rem;
+}
+textarea {
+  border: solid 2px black;
+}
+
+#delete-button {
+  border: solid 1px black;
+  background-color: rgb(221, 209, 232);
+}
+
+#delete-button:hover {
+  background-color: rgb(201, 175, 224);
 }
