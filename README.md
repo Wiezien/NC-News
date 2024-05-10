@@ -1,8 +1,34 @@
-# React + Vite
+Link to deployed version on Netlify: 
+https://nc-news-wiezien.netlify.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project Summary:
+NC-News is a social news aggregation, web content rating and discussion website.
 
-Currently, two official plugins are available:
+The user is able to select articles they wish to read more about, vote and add comments.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+There is no sign-in authentication as this was not a focus for the project.
+
+This is an ongoing work in progress project with the functionality being implemented before full styling is complete.
+
+It leverages the API’s from my News API backend project. 
+Here is a link to the hosted version on Render:
+https://news-api-project-hnma.onrender.com
+
+React and Vite are installed.
+
+Minimum version required to run project:
+Node.js 21.6.1
+
+SET UP INSTRUCTIONS
+
+To clone repository to your local machine:
+`git clone https://github.com/Wiezien/NC-News.git`
+
+Navigate into the cloned folder:
+`cd nc-news`
+
+Install all necessary dependencies:
+`npm install`
+
+Run the development server:
+`npm run dev`
