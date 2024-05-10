@@ -1,11 +1,12 @@
 import React from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
 import ArticlesList from "./components/ArticlesList";
+import { getAllArticles } from "./api.js";
 import ArticleCard from "./components/ArticleCard.jsx";
 import DetailedArticle from "./components/DetailedArticle.jsx";
 

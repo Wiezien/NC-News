@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
+import AddCommentForm from "./AddCommentForm";
 
-function CommentCard({ comments }) {
+function CommentCard({ comments, article }) {
   return (
     <section>
       <h2>Comments:</h2>
-
-      {comments.map((comment) => (
-        <li key={comment.comment_id}>
-          <h3>By {comment.author}</h3>
-          <h4>Votes {comment.votes}</h4>
-          <h4>{comment.created_at}</h4>
-          <p id="comment-item">{comment.body}</p>
-        </li>
-      ))}
+      <AddCommentForm article={article} comments={comments} />
+      <ul>
+        {comments.map((comment) => (
+          <li key={comment.comment_id}>
+            <h3>By {comment.author}</h3>
+            <h4>Votes {comment.votes}</h4>
+            <h4>{comment.created_at}</h4>
+            <p id="comment-item">{comment.body}</p>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }

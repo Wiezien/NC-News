@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getArticleById, getCommentsByArticleId } from "../api";
-import ArticleCard from "./ArticleCard";
 import CommentCard from "./CommentCard";
 import ArticleVotes from "./ArticleVotes";
-import { patchVotesByArticleId } from "../api";
 
 function DetailedArticle() {
   const { article_id } = useParams();
@@ -46,7 +44,6 @@ function DetailedArticle() {
         alt={article.title}
         id="article-image"
       />
-
       <CommentCard key={comments.id} comments={comments} />
     </div>
   );
