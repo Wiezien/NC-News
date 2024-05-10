@@ -53,6 +53,7 @@ li {
 }
 
 #article-body {
+  
   border: dashed 2px rgb(119, 8, 119);
 }
 
@@ -114,4 +115,12 @@ textarea {
 
 #delete-button:hover {
   background-color: rgb(201, 175, 224);
+}
+
+#article-title {
+  font-size: 2rem;
+}
+
+#article-list {
+  font-size: 1rem;
 }

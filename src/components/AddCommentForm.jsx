@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { getCommentsByArticleId, postCommentByArticleId } from "../api";
+import { postCommentByArticleId } from "../api";
+import { getCommentsByArticleId } from "../api";
 import { useParams } from "react-router-dom";
 
 function AddCommentForm() {
