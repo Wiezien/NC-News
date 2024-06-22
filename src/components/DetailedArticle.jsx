@@ -21,18 +21,18 @@ function DetailedArticle() {
   }, [article_id]);
 
   if (!article) {
-    return <p>Loading...</p>;
+    return <p className="loading-msg">Loading...</p>;
   }
 
   return (
     <div id="single-article">
-      <h2 id="article-title">{article.title}</h2>
+      <h2 className="article-title">{article.title}</h2>
       <ul key={article.id} id="article-list">
-        <li>* By: {article.author}</li>
-        <li>* Topic: {article.topic}</li>
+        <li className="article-author"> By {article.author}</li>
+        <li className="article-topic"> Topic: {article.topic}</li>
         <li id="article-body">{article.body}</li>
-        <li>* Timestamp: {article.created_at}</li>
-        <li>* Votes: {article.votes}</li>
+        <li> Timestamp: {article.created_at}</li>
+        <li> Votes: {article.votes}</li>
       </ul>
       <ArticleVotes article={article} currentVotes={article.votes} />
       <img

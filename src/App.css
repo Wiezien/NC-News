@@ -11,12 +11,14 @@
 }
 
 #home {
-  font-size: 2rem;
+  font-size: 4rem;
   transition: color 0.3s ease;
+  color: lightblue;
+  text-shadow: 4px 4px black;
 }
 
 #home:hover {
-  color: red;
+  color: rgb(111, 196, 224);
 }
 
 li {
@@ -24,7 +26,7 @@ li {
 }
 
 .article {
-  border: dashed 2px rgb(119, 8, 119);
+  border-bottom: solid 1rem black;
   padding-bottom: 2rem;
   margin-bottom: 3rem;
 }
@@ -43,9 +45,18 @@ li {
   margin-left: 0;
 }
 
-#article-title {
+.article-title {
   font-size: 3rem;
   text-decoration: underline;
+  font-style: italic;
+}
+
+.article-author {
+  font-size: 2rem;
+}
+
+.article-topic {
+  font-size: 2rem;
 }
 
 #article-list {
@@ -53,17 +64,19 @@ li {
 }
 
 #article-body {
-  
-  border: dashed 2px rgb(119, 8, 119);
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 #article-image {
   max-width: 100%;
   height: auto;
+  width: auto;
+  border-radius: 50%;
 }
 
 #comment-item {
-  border-bottom: dashed 2px rgb(119, 8, 119);
+  border-bottom: solid 1rem black;
   padding-bottom: 1rem;
 }
 
@@ -73,27 +86,29 @@ li {
 
 .vote-button {
   margin: 0 1rem 1rem 1rem;
-  background-color: rgb(221, 209, 232);
+  background-color: lightblue;
+  border: solid 2px black;
 }
 
 .vote-button:hover {
-  background-color: rgb(201, 175, 224);
+  background-color: rgb(111, 196, 224);
+  border: solid 2px black;
 }
 
 #submit-button {
-  border: solid 1px black;
   margin: 0 1rem 1rem 1rem;
-  background-color: rgb(221, 209, 232);
+  background-color: lightblue;
+  border: solid 2px black;
 }
 
 #submit-button:hover {
-  background-color: rgb(201, 175, 224);
+  background-color: rgb(111, 196, 224);
 }
 
 .message-alert {
   font-size: 2rem;
-  font-weight: bold;
-  color: green;
+  font-weight: bolder;
+  color: black;
 }
 
 #add-comment-description {
@@ -104,23 +119,25 @@ li {
 #newComment {
   padding: 1rem;
 }
+
 textarea {
   border: solid 2px black;
 }
 
 #delete-button {
-  border: solid 1px black;
-  background-color: rgb(221, 209, 232);
+  background-color: lightblue;
+  border: solid 2px black;
 }
 
 #delete-button:hover {
-  background-color: rgb(201, 175, 224);
-}
-
-#article-title {
-  font-size: 2rem;
+  background-color: rgb(111, 196, 224);
 }
 
 #article-list {
   font-size: 1rem;
+}
+
+.loading-msg {
+  font-size: 2rem;
+  font-weight: bolder;
 }

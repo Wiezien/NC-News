@@ -36,7 +36,7 @@ function ArticleVotes({ article, currentVotes }) {
       >
         -
       </button>
-      {optimisticMsg && <p>{optimisticMsg}</p>}
+      {optimisticMsg && <p className="message-alert">{optimisticMsg}</p>}
     </div>
   );
 }

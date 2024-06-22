@@ -24,7 +24,7 @@ function ArticlesList() {
   }
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <p className="loading-msg">Loading...</p>;
   }
 
   return (
