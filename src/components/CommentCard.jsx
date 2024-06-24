@@ -14,7 +14,7 @@ function CommentCard({ comments, article, setComments }) {
       setErrorMsg("Not your comment to delete!");
       return;
     }
-    
+
     const updatedComments = comments.filter(
       (comment) => comment.comment_id !== comment_id
     );
@@ -26,7 +26,7 @@ function CommentCard({ comments, article, setComments }) {
 
   return (
     <section>
-      <h2>Comments:</h2>
+      <h2 id="comments-header">Comments:</h2>
       <AddCommentForm
         article={article}
         comments={comments}
