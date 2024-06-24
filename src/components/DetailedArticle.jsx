@@ -31,8 +31,8 @@ function DetailedArticle() {
         <li className="article-author"> By {article.author}</li>
         <li className="article-topic"> Topic: {article.topic}</li>
         <li id="article-body">{article.body}</li>
-        <li> Timestamp: {article.created_at}</li>
-        <li> Votes: {article.votes}</li>
+        <li id="timestamp"> Timestamp: {article.created_at}</li>
+        <li id="votes"> Votes: {article.votes}</li>
       </ul>
       <ArticleVotes article={article} currentVotes={article.votes} />
       <img
