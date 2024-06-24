@@ -58,6 +58,7 @@ li {
 
 .article-topic {
   font-size: 2rem;
+  text-decoration: underline;
 }
 
 #article-list {
@@ -123,11 +124,12 @@ li {
 }
 
 textarea {
-  border: solid 2px black;
+  border: solid 3px black;
 }
 
 #delete-button {
   background-color: lightblue;
+  border: 5px;
   border: solid 2px black;
 }
 
@@ -150,4 +152,12 @@ textarea {
 
 #timestamp {
   text-decoration: underline;
+}
+
+#comments-header {
+  font-size: 3rem;
+}
+
+#add-comment-description {
+  font-size: 2rem;
 }
