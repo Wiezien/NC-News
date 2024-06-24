@@ -53,6 +53,7 @@ li {
 
 .article-author {
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .article-topic {
@@ -73,6 +74,7 @@ li {
   height: auto;
   width: auto;
   border-radius: 50%;
+  border: solid 3px black;
 }
 
 #comment-item {
@@ -140,4 +142,12 @@ textarea {
 .loading-msg {
   font-size: 2rem;
   font-weight: bolder;
+}
+
+#votes {
+  font-size: 2rem;
+}
+
+#timestamp {
+  text-decoration: underline;
 }
