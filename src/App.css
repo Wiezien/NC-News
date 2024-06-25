@@ -13,12 +13,12 @@
 #home {
   font-size: 4rem;
   transition: color 0.3s ease;
-  color: lightblue;
+  color: rgb(87, 163, 188);
   text-shadow: 4px 4px black;
 }
 
 #home:hover {
-  color: rgb(111, 196, 224);
+  color: rgb(92, 179, 208);
 }
 
 li {
