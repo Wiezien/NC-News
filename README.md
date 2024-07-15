@@ -14,8 +14,6 @@ https://nc-news-wiezien.netlify.app/
 
 - **Authentication**: There is no sign-in authentication as it was not a focus for this project.
 
-- **Work in Progress**: This is an ongoing project, with functionality being implemented before full styling is complete.
-
 - **Technologies Used**: React and Vite are installed.
 
 - **API Access**: The project leverages the API’s from my News API backend project. 
